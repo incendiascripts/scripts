@@ -1,0 +1,107 @@
+
+local Window = Library.CreateLib("tvo script", "Synapse")
+ 
+local Tab = Window:NewTab("Self Stuff")
+local Tab1Section = Tab:NewSection("Self Stuff")
+ 
+Tab1Section:NewButton("self feed", "MIkael only", function()
+    local args = {
+    [1] = workspace:WaitForChild("Players"):WaitForChild("Baconteamer19"),
+    [2] = Enum.UserInputType.MouseButton1,
+    [3] = "Feed",
+    [4] = CFrame.new(124.16212463378906, 11.19514274597168, 339.47344970703125, 0.7891724705696106, 0.34293606877326965, -0.5095112919807434, -1.4901161193847656e-08, 0.8295910358428955, 0.5583716034889221, 0.6141717433929443, -0.4406515061855316, 0.6546903252601624),
+    [5] = true
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Action"):WaitForChild("VampireKeybind"):FireServer(unpack(args))
+ 
+end)
+ 
+ 
+Tab1Section:NewButton("Become Mikael", "changes your character", function()
+    local args = {
+    [1] = "Mikael",
+    [2] = "Outfit1"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("System"):WaitForChild("Character"):FireServer(unpack(args))
+ 
+end)
+ 
+ 
+Tab1Section:NewButton("Become Cleo", "Changes Ur Char", function()
+    local args = {
+    [1] = "Cleo",
+    [2] = "Outfit1"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("System"):WaitForChild("Character"):FireServer(unpack(args))
+ 
+end)
+ 
+Tab1Section:NewButton("Become Davina", "changes ur char", function()
+    local args = {
+    [1] = "Davina",
+    [2] = "Outfit1"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("System"):WaitForChild("Character"):FireServer(unpack(args))
+ 
+end)
+ 
+Tab1Section:NewButton("Self Head Dive", "vampires only(i think?)", function()
+    local args = {
+    [1] = workspace:WaitForChild("Players"):WaitForChild("Baconteamer19"),
+    [2] = Enum.UserInputType.MouseButton1,
+    [3] = "Head Dive",
+    [4] = CFrame.new(190.67713928222656, 11.367044448852539, 183.2598419189453, 0.9781724214553833, -0.1337861567735672, 0.1589970588684082, -0, 0.7651627659797668, 0.6438369750976562, -0.20779508352279663, -0.629783570766449, 0.7484610676765442)
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Action"):WaitForChild("VampireKeybind"):FireServer(unpack(args))
+ 
+end)
+ 
+Tab1Section:NewButton("health boost", "only one use", function()
+    print("Clicked")
+end)
+ 
+Tab1Section:NewButton("Become Esther", "makes u esther", function()
+    local args = {
+    [1] = "Esther",
+    [2] = "Outfit2"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("System"):WaitForChild("Character"):FireServer(unpack(args))
+ 
+end)
+ 
+Tab1Section:NewButton("Self Fortis Lamina", "ButtonInfo", function()
+    print("Clicked")
+end)
+ 
+Tab1Section:NewButton("Self Ring", "Dosent Work", function()
+    local args = {
+    [1] = "sol anulus constructum",
+    [2] = workspace:WaitForChild("Players"):WaitForChild("Baconteamer19"),
+    [3] = CFrame.new(804.4265747070312, 15.84850788116455, 432.166015625, -0.9600021243095398, -0.16887788474559784, 0.22332969307899475, -0, 0.7976269721984863, 0.6031511425971985, -0.27999264001846313, 0.5790264010429382, -0.7657235860824585),
+    [4] = game:GetService("Players"):WaitForChild("Baconteamer19").Character.HumanoidRootPart
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Action"):WaitForChild("SpellEvent"):FireServer(unpack(args))
+ 
+end)
+ 
+ 
+ 
+Tab1Section:NewButton("Become Josie", "makes u Josie", function()
+    local args = {
+    [1] = "Josie",
+    [2] = "Outfit2"
+}
+ 
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("System"):WaitForChild("Character"):FireServer(unpack(args))
+ 
+end)
+ 
+ 
+ 
