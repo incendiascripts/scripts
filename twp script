@@ -1,0 +1,55 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("tvd game script", "Ocean")
+
+
+
+
+local Tab = Window:NewTab("characters")
+local Tab1Section = Tab:NewSection("characters")
+
+
+Tab1Section:NewButton("Be Bonnie", "ButtonInfo", function()
+    local args = {
+    [1] = "Bonnie",
+    [2] = "Outfit1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("CharacterConfig"):WaitForChild("GetCharacter"):FireServer(unpack(args))
+
+end)
+
+Tab1Section:NewButton("Self Heal", "ButtonInfo", function()
+    local args = {
+    [1] = {
+        ["IncantationText"] = "sanitatem",
+        ["Target"] = workspace:WaitForChild("players"):WaitForChild("Baconteamer19")
+    },
+    [2] = Vector3.new(-436.81622314453125, 139.76333618164062, -1.1278061866760254)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WitchSpell"):FireServer(unpack(args))
+
+end)
+
+
+Tab1Section:NewButton("Be Inadu", "ButtonInfo", function()
+    local args = {
+    [1] = "Inadu",
+    [2] = "Outfit1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("CharacterConfig"):WaitForChild("GetCharacter"):FireServer(unpack(args))
+
+end)
+
+
+Tab1Section:NewButton("Be Qetsiyah", "ButtonInfo", function()
+    local args = {
+    [1] = "qetsiyah",
+    [2] = "Outfit1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("CharacterConfig"):WaitForChild("GetCharacter"):FireServer(unpack(args))
+
+end)
+
