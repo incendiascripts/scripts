@@ -150,3 +150,10 @@ end)
 
 end)
 
+
+
+
+
+Section:NewButton("witch shop teleport", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(Vector3.new(168, 6, 116))
+end)
