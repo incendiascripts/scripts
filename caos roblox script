@@ -10,6 +10,21 @@ local Section = Tab:NewSection("keybinds")
 
 
 
+Section:NewKeybind("sabrina hell fire", "KeybindInfo", Enum.KeyCode.C, function()
+	local args = {
+    [1] = {
+        ["hit"] = game:GetService("Players"):WaitForChild("bkyle2").Character.HumanoidRootPart,
+        ["position"] = Vector3.new(189.19651794433594, 8.718244552612305, 240.4656219482422)
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("InitSpell"):WaitForChild("InitMassHellfire"):FireServer(unpack(args))
+
+
+end)
+
+
+
 Section:NewButton("self heal", "self heals", function()
     local args = {
     [1] = {
