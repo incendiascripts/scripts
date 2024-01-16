@@ -1,0 +1,33 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("charmed script", "Synapse")
+
+
+
+
+
+local Tab = Window:NewTab("keybinds and more")
+local Section = Tab:NewSection("keybinds")
+
+
+
+Section:NewButton("mass combust", "ButtonInfo", function()
+    local args = {
+    [1] = "aoecombustion",
+    [2] = Vector3.new(242.6723175048828, 63.48766326904297, -226.14334106445312)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Witches"):WaitForChild("GoodWitches"):WaitForChild("Piper"):WaitForChild("PowerEvents"):WaitForChild("PiperEvents"):FireServer(unpack(args))
+
+end)
+
+
+
+Section:NewButton("shield", "ButtonInfo", function()
+    local args = {
+    [1] = "shield",
+    [2] = Vector3.new(-198.39169311523438, 119.36207580566406, -212.88397216796875)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Witches"):WaitForChild("GoodWitches"):WaitForChild("Paige"):WaitForChild("PowerEvents"):WaitForChild("PaigeEvents"):FireServer(unpack(args))
+
+end)
