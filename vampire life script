@@ -1,0 +1,25 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("vampire life script", "Synapse")
+
+
+
+
+
+local Tab = Window:NewTab("keybinds and more")
+local Section = Tab:NewSection("keybinds")
+
+
+
+
+Section:NewKeybind("delfan eoten cor", "KeybindInfo", Enum.KeyCode.T, function()
+	local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+playerName = tostring(mouse.Target:FindFirstAncestorOfClass('Model'))
+
+local args = {
+    [1] = game:GetService("Players"):WaitForChild("playerName").Character.Torso,
+    [2] = 24.057748794555664
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("f4737485-4ecf-4758-955e-e15f2b494eb5"):FireServer(unpack(args))
+end)
