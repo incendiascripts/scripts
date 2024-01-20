@@ -34,6 +34,10 @@ Section:NewButton("be madison", "ButtonInfo", function()
     game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
 end)
 
+Section:NewButton("be child", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "The Child")
+end)
+
 Section:NewButton("be phoenix force", "ButtonInfo", function()
     game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Jean Grey: Phoenix Force ")
 end)
