@@ -5,14 +5,11 @@ local Window = Library.CreateLib("marvel game script", "Synapse")
 
 
 
-local Tab = Window:NewTab("keybinds and more")
-local Section = Tab:NewSection("keybinds")
+local Tab = Window:NewTab("characters")
+local Section = Tab:NewSection("characters")
 
 
-Section:NewButton("destroy backround", "ButtonInfo", function()
-    game.ReplicatedStorage.Ui.MainScreen:destroy()
-       game.WakSpace.Selection_Background:destroy()
-end)
+
 
 Section:NewButton("be white phoenix", "ButtonInfo", function()
     local args = {
@@ -27,6 +24,16 @@ end)
 Section:NewButton("be wiccan", "ButtonInfo", function()
     local args = {
     [1] = "Wiccan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+
+end)
+
+
+Section:NewButton("be wanda", "ButtonInfo", function()
+    local args = {
+    [1] = "Wanda"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
