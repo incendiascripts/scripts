@@ -1,0 +1,20 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("marvel game script", "Synapse")
+
+
+
+
+
+local Tab = Window:NewTab("characters")
+local Section = Tab:NewSection("characters")
+
+
+Section:NewButton("delete backround", "ButtonInfo", function()
+    game.ReplicatedStorage.Ui.MainScreen:destroy()
+       game.WakSpace.Selection_Background:destroy()
+end)
+
+
+Section:NewButton("be dark josie", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Dark Josie")
+end)
