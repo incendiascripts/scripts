@@ -1,0 +1,39 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("crossover dynasty", "Synapse")
+
+
+
+
+
+local Tab = Window:NewTab("keybinds and more")
+local Section = Tab:NewSection("keybinds")
+
+
+Section:NewButton("delete backround", "ButtonInfo", function()
+    game.ReplicatedStorage.Ui.MainScreen:destroy()
+       game.WakSpace.Selection_Background:destroy()
+end)
+
+
+
+Section:NewButton("be freya", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Freya Mikaelson")
+end)
+
+
+Section:NewButton("be dark josie", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Dark Josie Saltzman")
+end)
+
+
+Section:NewButton("be barbie", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Barbie")
+end)
+
+Section:NewButton("be madison", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
+end)
+
+Section:NewButton("be phoenix force", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Jean Grey: Phoenix Force ")
+end)
