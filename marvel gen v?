@@ -18,3 +18,38 @@ end)
 Section:NewButton("be dark josie", "ButtonInfo", function()
     game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Dark Josie")
 end)
+
+
+
+Section:NewButton("be prom gwen", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Prom Gwen")
+end)
+
+
+Section:NewButton("be freya", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Freya Mikaelson")
+end)
+
+
+
+Section:NewButton("be barbie", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Barbie")
+end)
+
+
+
+Section:NewButton("be Scarlet witch", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet witch:  Multiverse Of Madness")
+end)
+
+
+
+
+Section:NewButton("be sabrina", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Sabrina")
+end)
+
+
+Section:NewButton("be child", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Child")
+end)
