@@ -159,3 +159,21 @@ bennettscripts = {
 
 game:GetService("ReplicatedStorage").Remotes.DeployCharacter:FireServer(unpack(bennettscripts))
 end)
+
+
+
+
+Section:NewButton("mass kneel", "ButtonInfo", function()
+ocal player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+playerName = tostring(mouse.Target:FindFirstAncestorOfClass('Model'))
+
+local args = {
+    [1] = {
+        ["hit"] = game:GetService("Players"):WaitForChild("playerName").Character.LeftLowerLeg,
+        ["position"] = Vector3.new(629.2420043945312, -125.78909301757812, 786.0413818359375)
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("InitSpell"):WaitForChild("InitMassKneel"):FireServer(unpack(args))
+end)
