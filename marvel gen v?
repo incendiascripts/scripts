@@ -65,4 +65,11 @@ end)
 
 Section:NewButton("be madison", "ButtonInfo", function()
     game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison Montgomery")
+end) 
+
+
+
+Section:NewButton("be maleficent", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Maleficent")
 end)
+
