@@ -39,7 +39,7 @@ end)
 
 
 Section:NewButton("be Scarlet witch", "ButtonInfo", function()
-    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet witch: Multiverse Of Madness")
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet Witch: Multiverse Of Madness")
 end)
 
 
@@ -64,7 +64,7 @@ end)
 
 
 Section:NewButton("be madison", "ButtonInfo", function()
-    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison Montgomery")
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
 end) 
 
 
@@ -72,4 +72,12 @@ end)
 Section:NewButton("be maleficent", "ButtonInfo", function()
     game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Maleficent")
 end)
+
+
+
+
+Section:NewButton("be raven", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Raven")
+end)
+
 
