@@ -1,0 +1,43 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("marvel liberty", "Synapse")
+
+
+
+
+
+local Tab = Window:NewTab("characters")
+local Section = Tab:NewSection("characters")
+
+
+Section:NewButton("delete backround", "ButtonInfo", function()
+    game.ReplicatedStorage.Ui.MainScreen:destroy()
+       game.WakSpace.Selection_Background:destroy()
+end)
+
+
+
+
+
+Section:NewButton("be madison", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
+end)
+
+
+
+
+Section:NewButton("be sabrina", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Sabrina")
+end)
+
+
+
+
+
+Section:NewButton("be child", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Child")
+end)
+
+
+Section:NewButton("be dark pheonix", "ButtonInfo", function()
+    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Jean Grey: Dark Phoenix")
+end)
